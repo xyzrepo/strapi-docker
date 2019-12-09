@@ -1,7 +1,7 @@
 {
   "name": "strapi-docker",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "bin/build.js",
   "repository": "https://github.com/strapi/strapi-docker.git",
   "author": "Alexandre Bodin <bodin.alex@gmail.com>",
   "license": "MIT",
