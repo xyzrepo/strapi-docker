@@ -6,6 +6,7 @@
   "author": "Alexandre Bodin <bodin.alex@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "start": "strapi start",
     "lint": "eslint ."
   },
   "dependencies": {
