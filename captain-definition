@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "dockerfileLines": [
-    "FROM strapi/base",
+    "FROM strapi/strapi",
     "COPY ./package.json /srv/app/",
     "COPY ./yarn.lock /srv/app/",
     "COPY . /srv/app",
