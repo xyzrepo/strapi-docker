@@ -1,14 +1,12 @@
 {
   "schemaVersion": 2,
   "dockerfileLines": [
-    "FROM strapi/base",
+    "FROM strapi/strapi",
     "WORKDIR /srv/app",
     "COPY ./package.json ./",
     "COPY ./yarn.lock ./",
     "COPY . .",
-    "RUN npm install",
-    "EXPOSE 1337",
-    "RUN node ./bin/build.js",
-    "CMD [\"npm\",\"start\"]"
+    "RUN npm install && npm start",
+    "EXPOSE 1337"
   ]
 }
