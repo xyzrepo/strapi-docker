@@ -7,8 +7,6 @@
     "COPY ./yarn.lock /srv/app/",
     "COPY . /srv/app",
     "RUN npm install",
-    "EXPOSE 1337",
-    "ENV NODE_ENV production",
-    "RUN npm start"
+    "EXPOSE 1337"
   ]
 }
