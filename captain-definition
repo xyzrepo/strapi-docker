@@ -1,10 +1,7 @@
 {
   "schemaVersion": 2,
   "dockerfileLines": [
-    "FROM strapi/strapi",
-    "WORKDIR /srv/app",
-    "COPY ./package.json ./",
-    "COPY ./yarn.lock ./",
+    "FROM strapi/strapi:latest",
     "COPY . .",
     "RUN npm install",
     "EXPOSE 1337",
