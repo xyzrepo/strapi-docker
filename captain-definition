@@ -1,4 +1,6 @@
  {
   "schemaVersion": 2,
-  "dockerfilePath": "./bin/build.js"
+  "dockerfileLines": [
+      "RUN node ./bin/build.js"
+  ]
  }
