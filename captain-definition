@@ -1,13 +1,15 @@
- {
+{
   "schemaVersion": 2,
   "dockerfileLines": [
     "FROM strapi/base",
-    "WORKDIR /app",
-    "COPY package.json /app/",
-    "COPY yarn.lock /app/",
-    "RUN yarn install --production && yarn cache clean",
-    "COPY . /app",
+    "WORKDIR /srv/app",
+    "COPY ./package.json ./",
+    "COPY ./yarn.lock ./",
+    "RUN yarn install",
+    "COPY . .",
+    "RUN yarn build",
+    "EXPOSE 1337",
     "ENV NODE_ENV production",
-    "ENTRYPOINT [\"node\", \"./bin/build.js\"]"
+    "CMD [\"yarn\", \"start\"]"
   ]
 }
