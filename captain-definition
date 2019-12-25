@@ -3,9 +3,9 @@
   "dockerfileLines": [
     "FROM strapi/strapi",
     "WORKDIR /srv/app",
-    "COPY ./package.json /srv/app/",
-    "COPY ./yarn.lock /srv/app/",
-    "COPY . /srv/app",
+    "COPY ./package.json ./",
+    "COPY ./yarn.lock ./",
+    "COPY . .",
     "RUN npm install",
     "EXPOSE 1337"
   ]
